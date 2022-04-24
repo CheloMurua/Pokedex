@@ -232,6 +232,46 @@ body section .ice {
   background-color: #3396cd;
 }
 
+body section .steel {
+  background-color: #cad6ed;
+}
+
+body section .bug {
+  background-color: #a7c673;
+}
+
+body section .ghost {
+  background-color: #310658;
+}
+
+body section .fairy {
+  background-color: #f6bfc4;
+}
+
+body section .fighting {
+  background-color: #bb987f;
+}
+
+body section .psychic {
+  background-color: #8e6a84;
+}
+
+body section .rock {
+  background-color: #c1c2ce;
+}
+
+body section .sinister {
+  background-color: #3b4043;
+}
+
+body section .ground {
+  background-color: #8c5f1a;
+}
+
+body section .dragon {
+  background-color: #d8ddde;
+}
+
 body section .otraClase {
   background-color: grey;
 }

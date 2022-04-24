@@ -2,7 +2,7 @@ const pokedex = document.getElementById("pokedex");
 let contadorId = 0;
 
 const capturar = async () => {
-    const {value : pokeSolicitado} = (await Swal.fire({
+    const { value: pokeSolicitado } = (await Swal.fire({
         title: 'Ingrese el pokemon capturado',
         input: 'text'
     }));
@@ -58,7 +58,7 @@ const capturar = async () => {
 
         //Definimos clases al articulo para el tipo de color de fondo
 
-        let colorSegunTipo = "otraClase"
+        let colorSegunTipo = "otraClase";
 
         switch (tipo1) {
             case "water":
@@ -79,8 +79,35 @@ const capturar = async () => {
             case "poison":
                 colorSegunTipo = "poison"
                 break;
-            case "ice":
-                colorSegunTipo = "ice"
+            case "steel":
+                colorSegunTipo = "steel"
+                break;
+            case "bug":
+                colorSegunTipo = "bug"
+                break;
+            case "ghost":
+                colorSegunTipo = "ghost"
+                break;
+            case "fairy":
+                colorSegunTipo = "fairy"
+                break;
+            case "fighting":
+                colorSegunTipo = "fighting"
+                break;
+            case "psychic":
+                colorSegunTipo = "psychic"
+                break;
+            case "rock":
+                colorSegunTipo = "rock"
+                break;
+            case "sinister":
+                colorSegunTipo = "sinister"
+                break;
+            case "ground":
+                colorSegunTipo = "ground"
+                break;
+            case "dragon":
+                colorSegunTipo = "dragon"
                 break;
         }
         elementoNuevo.classList.add(`${colorSegunTipo}`);
