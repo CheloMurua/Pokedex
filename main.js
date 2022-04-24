@@ -2,7 +2,7 @@ const pokedex = document.getElementById("pokedex");
 let contadorId = 0;
 
 const capturar = () => {
-    const pokeSolicitado = prompt("Introduzca el nombre del pokemon").toLowerCase();
+    const pokeSolicitado = (prompt("Introduzca el nombre del pokemon")).toLowerCase();
 
     //Realizamos la request 
     const fetchData = async (pokeSolicitado) => {
@@ -10,13 +10,13 @@ const capturar = () => {
             .then(res => res.json())
             .then(res => res)
             .catch(error => Swal.fire({
-                type: "warning",
-                title: "Lo sentimos",
-                text: "No se ha encontrado pokemon :C"
+                type: 'warning',
+                title: 'Lo sentimos',
+                text: 'No se ha encontrado pokemon :C'
             }));
 
         //Asignamos variables a los valores obtenidos y deseados del fetch
-        const nombre = pokemomObtenido.name.toUpperCase();
+        const nombre = (pokemomObtenido.name).toUpperCase();
         const tipo1 = pokemomObtenido.types[0].type.name;
         const cantTipos = (pokemomObtenido.types).length;
 
