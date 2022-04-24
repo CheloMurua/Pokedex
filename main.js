@@ -15,7 +15,6 @@ const capturar = () => {
                 text: 'No se ha encontrado pokemon :C'
             }));
 
-        console.log(pokemomObtenido)
         //Asignamos variables a los valores obtenidos y deseados del fetch
         const nombre = (pokemomObtenido.name).toUpperCase();
         const tipo1 = pokemomObtenido.types[0].type.name;
@@ -34,7 +33,6 @@ const capturar = () => {
         //Añadimos Imagen de Pokemon al articulo al articulo
         const imgPokemon = document.createElement("img");
         imgPokemon.src = pokemomObtenido.sprites.other.dream_world.front_default;
-        console.log(imgPokemon.src)
         imgPokemon.alt = nombre;
         elementoNuevo.appendChild(imgPokemon)
 
