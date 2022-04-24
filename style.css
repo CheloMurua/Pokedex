@@ -259,7 +259,7 @@ body footer img {
   width: 5rem;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 350px) {
   body section {
     display: -webkit-box;
     display: -ms-flexbox;

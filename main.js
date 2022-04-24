@@ -10,9 +10,9 @@ const capturar = () => {
             .then(res => res.json())
             .then(res => res)
             .catch(error => Swal.fire({
-                type: 'warning',
                 title: 'Lo sentimos',
-                text: 'No se ha encontrado pokemon :C'
+                text: 'No se ha encontrado pokemon :C',
+                icon: 'error'
             }));
 
         //Asignamos variables a los valores obtenidos y deseados del fetch
