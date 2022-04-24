@@ -58,14 +58,6 @@ body header audio {
   width: 15rem;
 }
 
-body #pokedex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 body section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +74,8 @@ body section {
   margin: 0 3rem;
   border: 1rem solid grey;
   border-bottom: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body section div {

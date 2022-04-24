@@ -14,7 +14,7 @@ const capturar = async () => {
             .then(res => res)
             .catch(error => Swal.fire({
                 title: 'Lo sentimos',
-                text: 'No se ha encontrado pokemon :C',
+                text: 'El pokemon desconocido ha escapado',
                 icon: 'error'
             }));
 
