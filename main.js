@@ -1,12 +1,15 @@
 const pokedex = document.getElementById("pokedex");
 let contadorId = 0;
 
-const capturar = () => {
-    const pokeSolicitado = (prompt("Introduzca el nombre del pokemon")).toLowerCase();
+const capturar = async () => {
+    const {value : pokeSolicitado} = (await Swal.fire({
+        title: 'Ingrese el pokemon capturado',
+        input: 'text'
+    }));
 
     //Realizamos la request 
     const fetchData = async (pokeSolicitado) => {
-        const pokemomObtenido = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeSolicitado}`)
+        const pokemomObtenido = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeSolicitado.toLowerCase()}`)
             .then(res => res.json())
             .then(res => res)
             .catch(error => Swal.fire({
