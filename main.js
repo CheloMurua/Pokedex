@@ -10,7 +10,7 @@ const capturar = () => {
             .then(res => res.json())
             .then(res => res)
             .catch(error => Swal.fire({
-                type: "error",
+                type: "warning",
                 title: "Lo sentimos",
                 text: "No se ha encontrado pokemon :C"
             }));
@@ -24,7 +24,6 @@ const capturar = () => {
         contadorId++;
         const elementoNuevo = document.createElement("article");
         elementoNuevo.id = contadorId;
-        console.log(contadorId)
         pokedex.appendChild(elementoNuevo)
 
         //Generamos trash icon con Font Awesome y asignamos la funcion de borrarCarta()
