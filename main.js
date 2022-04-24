@@ -15,6 +15,7 @@ const capturar = () => {
                 text: 'No se ha encontrado pokemon :C'
             }));
 
+        console.log(pokemomObtenido)
         //Asignamos variables a los valores obtenidos y deseados del fetch
         const nombre = (pokemomObtenido.name).toUpperCase();
         const tipo1 = pokemomObtenido.types[0].type.name;
@@ -32,7 +33,8 @@ const capturar = () => {
 
         //Añadimos Imagen de Pokemon al articulo al articulo
         const imgPokemon = document.createElement("img");
-        imgPokemon.src = (pokemomObtenido.sprites.other.dream_world.front_default);
+        imgPokemon.src = pokemomObtenido.sprites.other.dream_world.front_default;
+        console.log(imgPokemon.src)
         imgPokemon.alt = nombre;
         elementoNuevo.appendChild(imgPokemon)
 
@@ -46,10 +48,10 @@ const capturar = () => {
         const tipoDePokemon = document.createElement("p");
         tipoDePokemon.classList.add("tipoDePokemon")
         if (cantTipos == 1) {
-            tipoDePokemon.innerHTML = `<strong>${tipo1}</strong>`;
+            tipoDePokemon.innerHTML = `<strong>${tipo1.toUpperCase()}</strong>`;
         } else {
             const tipo2 = pokemomObtenido.types[1].type.name;
-            tipoDePokemon.innerHTML = `<strong>${tipo1} / ${tipo2}</strong>`;
+            tipoDePokemon.innerHTML = `<strong>${tipo1.toUpperCase()} / ${tipo2.toUpperCase()}</strong>`;
         }
         elementoNuevo.appendChild(tipoDePokemon)
 

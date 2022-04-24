@@ -76,7 +76,7 @@ body section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 22rem;
+  min-height: 22.5rem;
   background: #ffff;
   border-radius: 5rem 5rem 0 0;
   margin: 0 3rem;
@@ -167,9 +167,9 @@ body section article img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 5rem;
-  height: 5rem;
-  padding: 2rem;
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
   border-radius: 1rem;
   background-color: #ffff;
 }
