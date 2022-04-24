@@ -16,11 +16,23 @@ body {
         display: flex;
         justify-content: center;
         align-content: center;
+        flex-direction: column;
         margin-bottom: 3rem;
 
+        a{
+            align-self: center;
+        }
+
         img {
+            align-self: center;
             width: 20rem;
             margin: 0;
+        }
+
+        audio{ 
+            align-self: center;
+            height: 2rem;
+            width: 15rem;
         }
     }
 

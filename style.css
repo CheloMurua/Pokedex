@@ -29,12 +29,33 @@ body header {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 3rem;
 }
 
+body header a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 body header img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 20rem;
   margin: 0;
+}
+
+body header audio {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 2rem;
+  width: 15rem;
 }
 
 body #pokedex {
