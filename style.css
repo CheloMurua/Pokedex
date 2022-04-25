@@ -276,7 +276,7 @@ body section .otraClase {
   background-color: grey;
 }
 
-body footer {
+body .Walking-Pikachu {
   background: #ffff;
   border-radius: 0 0 5rem 5rem;
   height: 6rem;
@@ -285,7 +285,7 @@ body footer {
   border-top: none;
 }
 
-body footer img {
+body .Walking-Pikachu img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
