@@ -148,6 +148,8 @@ body section article {
           box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   font-family: sans-serif;
   cursor: pointer;
+  -webkit-animation: scale-up-ver-center 0.4s linear forwards;
+          animation: scale-up-ver-center 0.4s linear forwards;
 }
 
 body section article:hover {
@@ -293,6 +295,10 @@ body .Walking-Pikachu img {
   width: 5rem;
 }
 
+body .swal2-container.swal2-center.swal2-backdrop-show {
+  font-family: sans-serif;
+}
+
 @media screen and (min-width: 350px) {
   body section {
     display: -webkit-box;
@@ -434,6 +440,28 @@ body .Walking-Pikachu img {
   }
   75% {
     opacity: .75;
+  }
+}
+
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
