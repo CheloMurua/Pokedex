@@ -28,6 +28,12 @@ const capturar = async () => {
         const elementoNuevo = document.createElement("article");
         elementoNuevo.id = contadorId;
         pokedex.appendChild(elementoNuevo)
+        elementoNuevo.animate([
+            { transform: 'scaleY(0.4)' },
+            { transform: 'scaleY(1)' }
+          ], {
+            duration: 150,
+          });
 
         //Generamos trash icon con Font Awesome y asignamos la funcion de borrarCarta()
         elementoNuevo.innerHTML = `<i class="fa-solid fa-trash" onclick="borrarCarta(${contadorId})"></i>`;
