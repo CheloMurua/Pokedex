@@ -18,12 +18,12 @@ const capturar = async () => {
                 icon: 'error'
             }));
 
-        //Asignamos variables a los valores obtenidos y deseados del fetch
+        //Asignamos variables a los valesor obtenidos y deseados del fetch
         const nombre = (pokemomObtenido.name).toUpperCase();
         const tipo1 = pokemomObtenido.types[0].type.name;
         const cantTipos = (pokemomObtenido.types).length;
 
-        //Generamos Articulo
+        //Generamos articulo
         contadorId++;
         const elementoNuevo = document.createElement("article");
         elementoNuevo.id = contadorId;
@@ -61,6 +61,12 @@ const capturar = async () => {
             tipoDePokemon.innerHTML = `<strong>${tipo1.toUpperCase()} / ${tipo2.toUpperCase()}</strong>`;
         }
         elementoNuevo.appendChild(tipoDePokemon)
+
+        Swal.fire({
+            title: 'Buen trabajo!',
+            text: `${nombre} regitrado con éxito`,
+            icon: 'success'
+        })
 
         //Definimos clases al articulo para el tipo de color de fondo
 
