@@ -92,11 +92,8 @@ body {
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
             font-family: sans-serif;
             cursor: pointer;
-            animation: scale-up-ver-center 0.4s linear forwards;
-
 
             &:hover {
-                transition: all 0.03s 0s ease-in;
                 transform: scale(1.1);
             }
 
